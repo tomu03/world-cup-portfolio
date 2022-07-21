@@ -83,16 +83,24 @@ h1 {
     flex-direction: column;
 }
 
-.blogs button {
+.blogs a{
     width: 190px;
-    height: 40px;
+    height: 30px;
     margin: 22px 30px;
+    color:#1E1E1E;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
     font-size: 15px;
     border-radius: 5px;
     border: none;
 }
+a:visited{
+    color: black;
+}
 
-.blog {
+#blog {
     background-color: #DD0000;
     color: aliceblue;
 }
@@ -145,6 +153,31 @@ h1 {
     grid-row-gap: 10px;
     grid-column-gap: 10px;
 }
+
+/* matchs styles*/
+.match {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.match-day {
+    width: 250px;
+    height: 250px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.matchs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+
 
 /* hidden items*/
 .hidden {
